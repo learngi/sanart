@@ -23,7 +23,7 @@ export class MyApp {
       { title: 'Gallery' },
       { title: 'PortFolio' },
       { title: 'Contact' },
-      { title: 'About me' },
+      { title: 'About' },
       { title: 'Login' }
     ];
 
@@ -39,8 +39,12 @@ export class MyApp {
   }
 
   openPage(page) {
+    console.log('page',page)
+    if(page =='About'){
+      this.nav.push('AboutPage')
+    }
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+    // this.nav.setRoot(page.component);
   }
 }

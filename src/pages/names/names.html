@@ -13,56 +13,29 @@
 </ion-header>
 
 
-<ion-content padding>
+<!-- <ion-content padding>
     <ion-list >
-        <ion-item>
+        <ion-item *ngFor ="let item of images">
           <ion-thumbnail item-start>
-            <img src="../../assets/imgs/names/1.jpg" imageViewer>
+            <img src="{{item.image}}" imageViewer>
           </ion-thumbnail>
-          <h2>Ruby</h2>
+          <h2>Names</h2>
         </ion-item>
-        <ion-item>
-            <ion-thumbnail item-start>
-              <img src="../../assets/imgs/names/2.jpeg" imageViewer>
-            </ion-thumbnail>
-            <h2>Ruby</h2>
-          </ion-item>
-          <ion-item>
-              <ion-thumbnail item-start>
-                <img src="../../assets/imgs/names/3.jpg" imageViewer>
-              </ion-thumbnail>
-              <h2>Ruby</h2>
-            </ion-item>
-            <ion-item>
-                <ion-thumbnail item-start>
-                  <img src="../../assets/imgs/names/4.jpg" imageViewer>
-                </ion-thumbnail>
-                <h2>Ruby</h2>
-              </ion-item>
-              <ion-item>
-                  <ion-thumbnail item-start>
-                    <img src="../../assets/imgs/names/5.jpg" imageViewer>
-                  </ion-thumbnail>
-                  <h2>Ruby</h2>
-                </ion-item>
-                <ion-item>
-                    <ion-thumbnail item-start>
-                      <img src="../../assets/imgs/names/6.jpg" imageViewer>
-                    </ion-thumbnail>
-                    <h2>Ruby</h2>
-                  </ion-item>
-                  <ion-item>
-                      <ion-thumbnail item-start>
-                        <img src="../../assets/imgs/names/7.jpg" imageViewer>
-                      </ion-thumbnail>
-                      <h2>Ruby</h2>
-                    </ion-item>
-                    <ion-item>
-                        <ion-thumbnail item-start>
-                          <img src="../../assets/imgs/names/8.jpg" imageViewer>
-                        </ion-thumbnail>
-                        <h2>Ruby</h2>
-                      </ion-item>
-      </ion-list>
+
+      </ion-list> -->
+      <ion-content class="card-background-page">
+
+          <ion-card *ngFor ="let item of images">
+            <img src="{{item.image}}" imageViewer/>
+            <!-- <div class="card-title">São Paulo</div>
+            <div class="card-subtitle">41 Listings</div> -->
+          </ion-card>
 
 </ion-content>
+<ion-fab bottom right class="fab_fixed">
+  <a href="https://api.whatsapp.com/send?phone=9032660506" color="fabColor" ion-fab mini >
+    <ion-icon name="chatbubbles"></ion-icon>
+    <!-- <a href="https://api.whatsapp.com/send?phone=9032660506">Send Message</a> -->
+
+  </a>
+</ion-fab>

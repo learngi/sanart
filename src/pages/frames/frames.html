@@ -13,57 +13,29 @@
 </ion-header>
 
 
-<ion-content padding>
-    <ion-list >
-        <ion-item>
+    <ion-content class="card-background-page">
+
+        <ion-card *ngFor ="let item of images">
+          <img src="{{item.image}}" imageViewer/>
+          <!-- <div class="card-title">São Paulo</div>
+          <div class="card-subtitle">41 Listings</div> -->
+        </ion-card>
+    <!-- <ion-list >
+        <ion-item *ngFor ="let item of images">
           <ion-thumbnail item-start>
-            <img src="../../assets/imgs/frames/1.jpeg" imageViewer>
+            <img src="{{item.image}}" imageViewer>
           </ion-thumbnail>
-          <h2>Ruby</h2>
+          <h2>Frames</h2>
         </ion-item>
-        <ion-item>
-            <ion-thumbnail item-start>
-              <img src="../../assets/imgs/frames/2.jpeg" imageViewer>
-            </ion-thumbnail>
-            <h2>Ruby</h2>
-          </ion-item>
-          <ion-item>
-              <ion-thumbnail item-start>
-                <img src="../../assets/imgs/frames/3.jpeg" imageViewer>
-              </ion-thumbnail>
-              <h2>Ruby</h2>
-            </ion-item>
-            <ion-item>
-                <ion-thumbnail item-start>
-                  <img src="../../assets/imgs/frames/4.jpeg" imageViewer>
-                </ion-thumbnail>
-                <h2>Ruby</h2>
-              </ion-item>
-              <ion-item>
-                  <ion-thumbnail item-start>
-                    <img src="../../assets/imgs/frames/5.jpeg" imageViewer>
-                  </ion-thumbnail>
-                  <h2>Ruby</h2>
-                </ion-item>
-                <ion-item>
-                    <ion-thumbnail item-start>
-                      <img src="../../assets/imgs/frames/6.jpg" imageViewer>
-                    </ion-thumbnail>
-                    <h2>Ruby</h2>
-                  </ion-item>
-                  <ion-item>
-                      <ion-thumbnail item-start>
-                        <img src="../../assets/imgs/frames/7.jpg" imageViewer>
-                      </ion-thumbnail>
-                      <h2>Ruby</h2>
-                    </ion-item>
-                    <ion-item>
-                        <ion-thumbnail item-start>
-                          <img src="../../assets/imgs/frames/8.jpg" imageViewer>
-                        </ion-thumbnail>
-                        <h2>Ruby</h2>
-                      </ion-item>
-      </ion-list>
+ 
+      </ion-list> -->
 
 </ion-content>
+<ion-fab bottom right class="fab_fixed">
+  <a href="https://api.whatsapp.com/send?phone=9032660506" color="fabColor" ion-fab mini >
+    <ion-icon name="chatbubbles"></ion-icon>
+    <!-- <a href="https://api.whatsapp.com/send?phone=9032660506">Send Message</a> -->
+
+  </a>
+</ion-fab>
 

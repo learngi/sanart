@@ -5,34 +5,28 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<!-- <ion-content padding>
     <ion-list >
-        <ion-item>
-          <ion-thumbnail item-start>
-            
-              
-            <img src="../../assets/imgs/birthday/1.jpeg" imageViewer>
+        <ion-item *ngFor = "let item of images">
+          <ion-thumbnail item-start>                    
+            <img src="{{item.image}}" imageViewer>
           </ion-thumbnail>
-          <h2>Ruby</h2>
+          <h2>Images </h2>
         </ion-item>
-        <ion-item>
-            <ion-thumbnail item-start>
-              <img src="../../assets/imgs/birthday/2.jpg" imageViewer>
-            </ion-thumbnail>
-            <h2>Ruby</h2>
-          </ion-item>
-          <ion-item>
-              <ion-thumbnail item-start>
-                <img src="../../assets/imgs/birthday/3.jpg" imageViewer>
-              </ion-thumbnail>
-              <h2>Ruby</h2>
-            </ion-item>
-            <ion-item>
-                <ion-thumbnail item-start>
-                  <img src="../../assets/imgs/birthday/4.jpeg" imageViewer>
-                </ion-thumbnail>
-                <h2>Ruby</h2>
-              </ion-item>
-      </ion-list>
+      </ion-list> -->
+      <ion-content class="card-background-page">
+
+          <ion-card *ngFor ="let item of images">
+            <img src="{{item.image}}" imageViewer/>
+            <!-- <div class="card-title">São Paulo</div>
+            <div class="card-subtitle">41 Listings</div> -->
+          </ion-card>
 
 </ion-content>
+<ion-fab bottom right class="fab_fixed">
+  <a href="https://api.whatsapp.com/send?phone=9032660506" color="fabColor" ion-fab mini >
+    <ion-icon name="chatbubbles"></ion-icon>
+    <!-- <a href="https://api.whatsapp.com/send?phone=9032660506">Send Message</a> -->
+
+  </a>
+</ion-fab>

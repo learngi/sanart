@@ -14,7 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'dashboard.html',
 })
 export class DashboardPage {
-
+ 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -22,16 +22,16 @@ export class DashboardPage {
     console.log('ionViewDidLoad DashboardPage');
   }
 
-  birthday(){
+  birthday() {
     this.navCtrl.push('BirthdaysPage')
-   }
-   love(){
+  }
+  love() {
     this.navCtrl.push('LovePage')
-   }
-   names(){
+  }
+  names() {
     this.navCtrl.push('NamesPage')
-   }
-   frames(){
+  }
+  frames() {
     this.navCtrl.push('FramesPage')
-   }
+  }
 }

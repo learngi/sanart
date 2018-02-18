@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { BirthdaysPage } from './birthdays';
-import {ComponentsModule} from '../../components/components.module'
 import { IonicImageViewerModule } from 'ionic-img-viewer';
 
 @NgModule({
@@ -10,8 +9,7 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
   ],
   imports: [
     IonicImageViewerModule,
-    IonicPageModule.forChild(BirthdaysPage),
-    ComponentsModule
+    IonicPageModule.forChild(BirthdaysPage),    
   ],
 })
 export class BirthdaysPageModule {}
